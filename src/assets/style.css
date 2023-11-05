@@ -1,0 +1,323 @@
+.title {
+  font-family: "Manrope", sans-serif;
+  color: #100557;
+}
+.pic {
+  background-image: url("./images/back.jpg");
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pic2 {
+  background-image: url("./images/execs/group.jpeg");
+  background-color: #cccccc;
+  height: 900px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pic3 {
+  margin: 1.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* new */
+.center {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  width: 50%;
+  max-width: 400px;
+}
+@media (min-width: 800px) {
+  .pic3 {
+    max-width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .pic2 {
+    height: 400px;
+  }
+}
+/* .about {
+    background-color: #689fbd;
+  } */
+footer {
+  background-color: #100557;
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  position: absolute;
+  width: 100%;
+}
+
+.lists {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h2,
+p {
+  font-family: "Inter", sans-serif;
+}
+.about h2 {
+  text-align: center;
+  margin-bottom: 0rem;
+  text-decoration: underline;
+}
+.about p {
+  margin: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+.podcast h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.podcast p {
+  margin: 5rem;
+  margin-top: 1.5rem;
+  text-align: justify;
+  margin-bottom: 0px;
+}
+.italic {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+.pmain {
+  text-decoration: underline;
+}
+.spotify {
+  margin: 3rem;
+  margin-top: 0px;
+  padding: 3rem;
+}
+.podcast a {
+  color: #100557;
+}
+.podcast a:hover {
+  color: #689fbd;
+}
+@media (max-width: 600px) {
+  .about p {
+    margin: 2rem;
+  }
+  .podcast p {
+    margin: 2rem;
+  }
+  .spotify {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* make it so that text is inside a container when the screen size is bigger than a certain size */
+@media (min-width: 800px) {
+  .about p,
+  .podcast p,
+  .spotify {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about p,
+  .podcast p,
+  .spotify {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+  background-color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #100557;
+  color: white;
+}
+.brandname {
+  font-size: 1rem;
+  margin: 1rem;
+  margin-left: 1.5rem;
+}
+
+.links ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+.links li {
+  list-style: none;
+}
+.links li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  font-family: "Inter", sans-serif;
+}
+.links li :hover {
+  background-color: #689fbd;
+  text-decoration: underline;
+  /* color: #100557; */
+}
+.toggle {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle {
+    /* display: flex block; */
+    display: flex;
+  }
+  .links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.links li {
+  text-align: center;
+}
+.links li a {
+  padding: 0.5rem 1rem;
+}
+.links.active {
+  display: flex;
+}
+.navbar img {
+  height: 50px;
+  /* put value of image height as your need */
+  float: left;
+  margin-right: 7px;
+  /* border-radius: 5px;
+    border-color: white; */
+}
+.title {
+  text-align: center;
+}
+.title h3 {
+  margin: 0px;
+  font-size: 30px;
+  font-style: italic;
+}
+.episodez h2 {
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+}
+.episodez p {
+  margin: 1.5rem;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .episodez p {
+    margin: 2rem;
+  }
+  /* .spotify {
+      margin: 1rem;
+      padding: 1rem;
+    } */
+}
+
+@media (min-width: 800px) {
+  .episodez p {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .episodez p {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 20px;
+  }
+}
+.videos h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.videos {
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 600px) {
+  .videos iframe {
+    width: 373px;
+    height: 210px;
+  }
+}
+.bot {
+  color: #100557;
+}
+.bot:hover {
+  color: #689fbd;
+}
+
+footer .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* hover effect if you want */
+footer .fa:hover {
+  color: #689fbd;
+}
+footer .follow {
+  padding: 10px;
+}
